@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*tipografias*/
+.gideon{
+    font-family: 'Gideon Roman', cursive;
+}
+.bebas{
+    font-family: 'Bebas Neue', cursive;
+}
+.tamañogrande{
+    font-size: large;
+
+}
+.tamañomedio{
+    font-size: medium;
+}
+/*fin tipografias*/
+
+/*tamaño imagenes*/
+.imggrande{
+    width: 600px;
+    height: 400px;
+}
+.imgmediana{
+    width: 300px;
+    height: 300px;
+}
+/*fin de tamaño imagen*/
+
+.redessociales{
+    display: flex;
+    justify-items: right;
+    margin-right: 30px;
+    
+    
+}
+.facebook{
+    padding-right: 20px;
+}
+
+header div img{
+    width: 100px;
+    height: 100px;
+   
+    
+    
+}
+header{
+    display: flex;
+    background-color: #5394F7;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: #5394F7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav ul li{
+    list-style-type: none;
+    
+    
+    
+    background-color: #ecf0f1;
+    
+    
+    
+} 
+div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+@media (max-width: 500px){
+    header{
+        height: 100px;
+        background-color: aqua;
+        grid-area: header;
+        
+    }
+  
+    nav{
+        height: 40%;
+        grid-area: nav;
+        
+        padding-top: 30px;
+        flex-wrap: wrap;
+       
+
+    }
+    .containergrid div{
+        height: 50%;
+        grid-area: div;
+    }
+    footer{
+        height: 100%;
+        grid-area: footer;
+    }
+    .containergrid{
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "div div"
+        "footer footer"
+    }
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*tipografias*/
+.gideon{
+    font-family: 'Gideon Roman', cursive;
+}
+.bebas{
+    font-family: 'Bebas Neue', cursive;
+}
+.tamañogrande{
+    font-size: large;
+
+}
+.tamañomedio{
+    font-size: medium;
+}
+/*fin tipografias*/
+
+/*tamaño imagenes*/
+.imggrande{
+    width: 600px;
+    height: 400px;
+}
+.imgmediana{
+    width: 300px;
+    height: 300px;
+}
+/*fin de tamaño imagen*/
+.divprofesor{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px
+
+}
+.divequipo{
+    display: flex;
+    
+    justify-content: center;
+}
+.sectionequipo{
+    display: flex;
+    justify-content: center;
+}
+header div img{
+    width: 100px;
+    height: 100px;
+   
+    
+    
+}
+header{
+    display: flex;
+    background-color: #5394F7;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: #5394F7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.nav ul li{
+    list-style-type: none;
+    display: inline-flex;
+    padding-top: 120px;
+    padding-inline: 130px;
+    padding-bottom: 50px;
+    width: 10px;
+    
+    background-color: #ecf0f1;
+    height: 10px;
+    
+    
+} 
+
+.nav{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+@media (max-width: 500px){
+    header{
+        height: 100px;
+        background-color: aqua;
+        grid-area: header;
+        
+    }
+  
+    nav{
+        height: 40%;
+        grid-area: nav;
+        
+        padding-top: 30px;
+    }
+    .containergrid div{
+        height: 70%;
+        grid-area: div;
+    }
+    main{
+        height: 50%;
+        grid-area: main;
+    }
+    section{
+        height: 50%;
+        grid-area: section;
+    }
+    footer{
+        height: 100%;
+        grid-area: footer;
+    }
+    .containergrid{
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "div div"
+        "main section"
+        "footer footer";
+    }
+}
