@@ -141,3 +141,8 @@ footer{
         "footer footer";
     }
 }
+/*animaciones*/
+.imagenequipo:hover{
+    transition: all 2s;
+    transform: scale(2);
+}
