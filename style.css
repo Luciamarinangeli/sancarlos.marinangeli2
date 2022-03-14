@@ -56,10 +56,9 @@
 .divimg{
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+    justify-content: space-between;
+    margin: 70px 60px;
+    
 }
 header div img{
     width: 100px;
@@ -71,7 +70,7 @@ header div img{
 header{
     display: flex;
     background-color: #5394F7;
-    position: fixed;
+   
     width: 100%;
     height: 100px;
     justify-content: space-between;
@@ -91,13 +90,13 @@ footer{
 .nav ul li{
     list-style-type: none;
     display: inline-flex;
-    padding-top: 120px;
+    
     padding-inline: 130px;
-    padding-bottom: 50px;
-    width: 10px;
+    
+    
     
     background-color: #ecf0f1;
-    height: 10px;
+   
     
     
 } 
@@ -158,4 +157,8 @@ footer{
         "footer footer" ;
     }
 }
-    
+/*animaciones*/
+.divimagenes:hover{
+    transform: scale(2);
+    transition: all 2s;
+}
